@@ -1,16 +1,8 @@
-const players = [{ name: "Player1", sign: "X`", score: 0 }];
+const players = [
+  { name: "Player1", sign: "X`", score: 0 },
+  { name: "Player2", sign: "o`", score: 0 },
+];
 
-function makeAdding(firstNumber) {
-  const first = firstNumber;
-  let total = "";
-  total += first;
-  console.log(total);
-  return function resulting(secondNumber) {
-    const second = secondNumber;
+function gameBoard() {}
 
-    return (total += second);
-  };
-}
-
-const add5 = makeAdding("first");
-console.log(add5("second"));
+function displayController() {}
