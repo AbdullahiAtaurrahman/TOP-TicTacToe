@@ -3,6 +3,10 @@ const players = [
   { name: "Player2", sign: "o`", score: 0 },
 ];
 
+function createPlayer(name, marker) {
+  return { name: name, marker: marker, score: 0 };
+}
+
 function gameBoard() {
   const rows = 3;
   const columns = 3;
@@ -15,6 +19,11 @@ function gameBoard() {
     }
     board.push(row);
   }
+  return board;
 }
 
+const board = gameBoard();
+
 function displayController() {}
+
+function gameController() {}
